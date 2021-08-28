@@ -1,0 +1,153 @@
+#necoyoadWrapper { width:290px !important; }
+#necoyoadWrapper *:not(a) { cusror:default !important; }
+
+#necoyoadShareLinks { padding:5%;margin:auto;width:90%; font-size:10px; }
+#necoyoadShareLinks a { padding:5px;margin:auto;float:left; font-size:10px; }
+#necoyoadShareLinks:after, #necoyoadShareLinks:before { content:" ";display:block;width:1px;height:1px;clear:both;float:none; }
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+	background: rgba(0,0,0,0.2);
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: rgba(0,0,0,0.8);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(0,0,0,0.2);
+}
+
+.necoyad_overlay {
+    box-shadow:#333 0 0 8px;
+    position: fixed;
+	top: 100px;
+	left: 100px;
+	min-width: 280px;
+	height: auto;
+	min-height: 100px;
+	overflow: auto;
+	z-index: 9999999;
+	cursor: move;
+    opacity:0.2;
+    border-radius:4px;
+    transition:all 0.1s ease-out;
+}
+.necoyad_overlay:hover {
+    opacity:1;
+    border-radius:14px;
+}
+.necoyoad_light,
+.necoyoad_light * {
+    background:rgba(255,255,255,0.6);
+    color:#333;
+}
+.necoyoad_dark,
+.necoyoad_dark * {
+    background:rgba(0,0,0,0.8);
+    color:#ccc;
+}
+
+#necoyoadWrapper input,
+#necoyoadWrapper textarea,
+#necoyoadWrapper select {
+    clear:both;
+    display:block;
+    width:90%;
+    padding:2%;
+    margin:1%;
+}
+
+#necoyoadWrapper .necoyoad_dark input,
+#necoyoadWrapper .necoyoad_dark textarea,
+#necoyoadWrapper .necoyoad_dark select {
+    background:#222 !important;
+    color:#ccc !important;
+}
+#necoyoadWrapper a:last-child img {
+    margin-top:100px;
+}
+#necoyoad_form_settings {
+    position:relative;
+}
+#necoyoad_form_settings button,
+#necoyoad_form_settings input[type=submit] {
+    background:#efb30d;
+    border-color:#995d00;
+    position:absolute;
+    bottom:-60px;
+}
+#necoyoad_form_settings button + button,
+#necoyoad_form_settings input[type=submit] + button {
+    bottom:-120px;
+}
+#necoyoad_logs li {
+    margin:0;
+    padding:5px;
+    border-bottom:solid 1px #ccc;
+    list-style:none;
+}
+.necoyoad_dark #necoyoad_logs li {
+    border-bottom-color:#444;
+}
+/* The switch - the box around the slider */
+.onoffswitch {
+    position: relative; 
+    width: 60px;
+    -webkit-user-select:none; 
+    -moz-user-select:none; 
+    -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none !important;
+}
+.onoffswitch-label {
+    display: block; 
+    height: 20px; 
+    overflow: hidden; 
+    cursor: pointer;
+    border: 2px solid #999999; 
+    border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; 
+    width: 250%; 
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; 
+    float: left; 
+    width: 50%; 
+    height: 60px; 
+    padding: 0; 
+    line-height: 20px;
+    font-size: 11px; 
+    color: white; 
+    font-family: Trebuchet, Arial, sans-serif; 
+    font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "DARK";
+    padding-left: 10px;
+    background-color: #eee; 
+    color: #000;
+}
+.onoffswitch-inner:after {
+    content: "LIGHT";
+    background-color: #333; 
+    color: #eee;
+    text-align: center;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:not(:checked) + .onoffswitch-label .onoffswitch-inner:after {
+    margin-left: -20px;
+}
